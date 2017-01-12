@@ -11,6 +11,9 @@ Vagrant.configure("2") do |c|
     v.vm.hostname = 'ie10-win7.ms'
     v.vm.box = 'microsoft/IE10-Win7-20170112a'
   end
+  c.vm.provider :virtualbox do |vb|
+    vb.gui = true
+  end
 end
 
 #
